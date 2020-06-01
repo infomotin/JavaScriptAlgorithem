@@ -74,3 +74,7 @@ t1 = performance.now();
 looping(10);
 t2 = performance.now();
 console.log((t2 - t1) / 1000)
+
+t1 = performance.now();
+looping(10);
+t2 = performance.now();
