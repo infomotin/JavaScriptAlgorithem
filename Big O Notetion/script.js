@@ -46,3 +46,31 @@ var t1 = performance.now();
 addUpTo(10000000000)
 var t2 = performance.now();
 console.log((t1 - t2) / 1000)
+
+function countDown(n) {
+    console.log("GoingUp");
+    for (let i = 0; i < n; i++) {
+        console.log(i);
+    }
+    console.log("going Down");
+    for (let j = n - 1; j >= 0; j--) {
+        console.log(j)
+    }
+}
+
+
+function looping(n) {
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            for (let k = 0; k < n; k++) {
+                for (let l = 0; l < n; l++) {
+                    console.log(i, j, k, l);
+                }
+            }
+        }
+    }
+}
+t1 = performance.now();
+looping(10);
+t2 = performance.now();
+console.log((t2 - t1) / 1000)
